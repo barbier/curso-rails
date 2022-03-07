@@ -1,0 +1,5 @@
+<% if local_assigns[:post] %>
+  <h3><%= link_to post.title, post_path(post) %></h3>
+  <%= post_meta post %>
+  <p><%= post.summary %></p>
+<% end %>

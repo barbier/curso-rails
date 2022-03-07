@@ -1,0 +1,10 @@
+<h1><%= @post.title %></h1>
+<p><%= post_meta @post %></p>
+
+<%= @post.details %>
+
+<p>Número total de artigos: <%= Post.total%></p>
+
+<%= simple_format @post.body %>
+
+<%= render partial: "posts/view_form", locals: { post: @post } %>
